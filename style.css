@@ -405,6 +405,7 @@ section{
 
 .numero{
     font-weight:700;
+    color: var(--dourado);
 }
 
 .evento{
@@ -440,6 +441,7 @@ section{
     display:block;
     margin-bottom:7px;
     font-size:13px;
+    color: var(--dourado);
 }
 
 .form-control{
