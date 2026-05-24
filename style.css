@@ -629,4 +629,26 @@ footer{
         grid-template-columns:1fr;
     }
 
+    @media (max-width: 768px) {
+
+    .calendario-container{
+        grid-template-columns: 1fr;
+    }
+
+    .dias{
+        gap:5px;
+    }
+
+    .dia{
+        min-width: 0;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .evento{
+        font-size: 10px;
+        word-break: break-word;
+    }
+}
+
 }
