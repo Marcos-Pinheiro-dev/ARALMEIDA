@@ -178,7 +178,6 @@ renderizarCalendario()
 
 /* AGENDAMENTO */
 
-
 const formAgendamento = document.getElementById("formAgendamento");
 
 formAgendamento.addEventListener("submit", function(){
@@ -191,4 +190,11 @@ formAgendamento.addEventListener("submit", function(){
 
     }, 1500);
 
+});
+
+
+
+document.getElementById("pdfInput").addEventListener("change", function () {
+    const fileName = this.files[0] ? this.files[0].name : "Nenhum arquivo selecionado";
+    document.getElementById("nomeArquivo").textContent = fileName;
 });
