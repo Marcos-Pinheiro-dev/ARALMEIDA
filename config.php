@@ -2,4 +2,4 @@
 
 session_start();
 
-$senhaAdmin = "almeida2026!";
+$senhaAdmin = "123456";

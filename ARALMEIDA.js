@@ -258,21 +258,9 @@ async function carregarEventos(){
 
                     <div class="item-evento">
 
-                        <div>
+                        <strong>${evento.data}</strong>
 
-                            <strong>${evento.data}</strong><br>
-
-                            <span>${evento.nome}</span>
-
-                        </div>
-
-                        <button
-                        class="btn-excluir"
-                        onclick="excluirEvento(${evento.id})">
-
-                            Excluir
-
-                        </button>
+                        <span>${evento.nome}</span>
 
                     </div>
 
@@ -364,54 +352,6 @@ if(formEvento){
         }
 
     });
-
-}
-
-/* EXCLUIR EVENTO */
-
-async function excluirEvento(id){
-
-    const confirmar = confirm("Deseja excluir este evento?");
-
-    if(!confirmar) return;
-
-    try{
-
-        const resposta = await fetch("excluir_evento.php", {
-
-            method:"POST",
-
-            headers:{
-                "Content-Type":"application/json"
-            },
-
-            body:JSON.stringify({
-                id
-            })
-
-        });
-
-        const dados = await resposta.json();
-
-        if(dados.status === "ok"){
-
-            alert("Evento excluído!");
-
-            carregarEventos();
-
-        }else{
-
-            alert(dados.mensagem || "Erro ao excluir");
-
-        }
-
-    }catch(e){
-
-        console.log(e);
-
-        alert("Erro no servidor");
-
-    }
 
 }
 
