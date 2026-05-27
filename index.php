@@ -47,7 +47,7 @@
                         <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#catalogos">Catálogos</a></li>
                         <li><a href="#eventos">Eventos</a></li>
-                        <li><a href="#agendamento">Agendamento</a></li>
+                        <li><a href="#agendamento">Agendamentos</a></li>
                         <li><a href="#rastreio">Rastreio</a></li>
                     </ul>
                     
@@ -70,7 +70,7 @@
         
                 <p>
                     Intermediamos parcerias estratégicas,
-                    otimizamos sua cadeia logística
+                    otimizamos
                     e impulsionamos sua marca.
                 </p>
         
@@ -256,6 +256,30 @@
                         <!-- AGENDAMENTO -->
         
                         <a href="IMAGENS CATÁLOGOS HIDROFILTROS/Cópia de Catálogo linha completa- Versão final_compressed.pdf" class="btn-download" target="_blank">
+                            Baixar PDF
+                        </a>
+        
+                    </div>
+        
+                </div>
+
+
+                <div class="catalogo">
+        
+                    <div class="catalogo-img">
+                        <img src="IMAGENSBIOTECNALCATALAGO/share-biotecnal.jpg">
+                    </div>
+        
+                    <div class="catalogo-conteudo">
+        
+                        <h3>Biotecnal</h3>
+        
+                        <p>
+                            Linha completa
+                        </p>
+                        <!-- AGENDAMENTO -->
+        
+                        <a href="https://biotecnal.ind.br/produtos/" class="btn-download" target="_blank">
                             Baixar PDF
                         </a>
         
@@ -458,7 +482,7 @@
         
                 <h2>
                     <i class="fa-regular fa-calendar-check"></i>
-                    Agendamento
+                    Agendamento de reuniões
                 </h2>
         
                 <p>
@@ -467,7 +491,7 @@
         
                 <form
     id="formAgendamento"
-    action="https://formsubmit.co/marcos.silva3@tramontina.com      "
+    action="https://formsubmit.co/alexandrealmeidarepresentacoes@gmail.com      "
     method="POST"
     enctype="multipart/form-data">
 
@@ -533,28 +557,58 @@
 
     <!-- FOOTER -->
 
-    <footer>
-        
-        <div class="redes">
-            
-            <a href="https://www.instagram.com/alexandre79almeida?igsh=M3NpZHdvNmk1djlm">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            
-            <a href="mailto:alexandrealmeidarepresentacoes@gmail.com?subject=Contato%20pelo%20site&body=Olá,%20gostaria%20de%20mais%20informações.">
-                <i class="fa-regular fa-envelope"></i>
-            </a>
-            
-        </div>
-        
-        <p>
-            © 2026 AR Almeida Representações
-        </p>
+    <!-- FOOTER -->
 
+<footer>
+    
+    <div class="redes">
         
+        <a href="https://www.instagram.com/alexandre79almeida?igsh=M3NpZHdvNmk1djlm">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
         
+        <a href="mailto:alexandrealmeidarepresentacoes@gmail.com?subject=Contato%20pelo%20site&body=Olá,%20gostaria%20de%20mais%20informações.">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
         
-    </footer>
+    </div>
+    
+    <p>
+        © 2026 AR Almeida Representações
+    </p>
+
+    <!-- LINK DIREITOS RESERVADOS -->
+
+    <p style="margin-top:8px;">
+        <a 
+        href="direitos.html"
+        target="_blank"
+        style="
+        color:#c5a880;
+        text-decoration:none;
+        font-size:14px;
+        ">
+            Termos de Uso • Direitos Reservados
+        </a>
+    </p>
+
+    <!-- DESENVOLVEDOR -->
+
+    <p style="margin-top:10px;">
+        Desenvolvido por 
+        <a 
+        href="https://wa.me/5591982397142"
+        target="_blank"
+        style="
+        color:#c5a880;
+        text-decoration:none;
+        font-weight:600;
+        ">
+            Marcos Pinheiro
+        </a>
+    </p>
+
+</footer>>
 
     <!-- WHATSAPP -->
 
