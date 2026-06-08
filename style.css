@@ -159,6 +159,33 @@ body{
         background:var(--dourado-hover);
         transform:translateY(-3px);
     }
+.hero-botoes{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.btn-install{
+    padding:15px 34px;
+    background:#b3946c;
+    color:var(--azul-escuro);
+    border:2px solid var(--dourado);
+    border-radius:5px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-install:hover{
+    background:var(--dourado);
+    color:var(--azul-escuro);
+    transform:translateY(-3px);
+}
+
+.btn-install i{
+    margin-right:8px;
+}
 
 /* SEÇÕES */
 
@@ -649,6 +676,15 @@ footer{
         font-size: 10px;
         word-break: break-word;
     }
+    .hero-botoes{
+    flex-direction:column;
+}
+
+.hero-botoes .btn,
+.hero-botoes .btn-install{
+    width:100%;
+    text-align:center;
+}
 }
 
 }

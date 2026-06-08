@@ -436,3 +436,36 @@ if ("serviceWorker" in navigator) {
       });
   });
 }
+
+let deferredPrompt;
+const installBtn = document.getElementById("installPWA");
+
+window.addEventListener("beforeinstallprompt", (e) => {
+    console.log("PWA pode ser instalado");
+
+    e.preventDefault();
+
+    deferredPrompt = e;
+
+    installBtn.style.display = "block";
+});
+
+installBtn.addEventListener("click", async () => {
+
+    if (!deferredPrompt) return;
+
+    deferredPrompt.prompt();
+
+    const { outcome } = await deferredPrompt.userChoice;
+
+    console.log("Resultado:", outcome);
+
+    deferredPrompt = null;
+
+    installBtn.style.display = "none";
+});
+
+window.addEventListener("appinstalled", () => {
+    console.log("PWA instalado com sucesso!");
+    installBtn.style.display = "none";
+});
